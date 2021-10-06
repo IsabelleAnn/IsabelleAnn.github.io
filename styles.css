@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: blue;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    width: 60%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+@media (max-width: 750px) {
+    .project-tile {
+        align-items: center;
+        width: 50%;
+        border: 1px solid red;
+    }
+}
+
+@media (min-width: 750px) {
+    #projects {
+        width: 50%;
+        border: 1px solid black;
+    }
+}
