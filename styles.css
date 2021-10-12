@@ -2,38 +2,144 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: blue;
 }
 
-nav {
-    height: 100px;
-    width: 100%;
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    color: rgb(27, 102, 95);
+}
+
+#navbar {
+    background-color: turquoise;
+    font-weight: bold;
     position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+#nav-links li {
+    padding: 15px;
+}
+
+#navbar a:link {
+    text-decoration: none;
+    color: rgb(27, 102, 95);
+}
+
+#navbar a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    text-decoration: none;
+    color: rgb(27, 102, 95);
+}
+
+#navbar a:active {
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu {
+    background-color: turquoise;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: 'Pattaya', sans-serif;
 }
 
 #welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
+    background-image: url("../assets/welcome-flowers.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: top;
 }
 
-h1 {
+#welcome-section header h1 {
+    color: rgb(27, 102, 95);
+    font-size: 50px;
+    text-shadow: 2px 2px turquoise;
+}
+
+#welcome-section header h3 {
+    color: rgb(27, 102, 95);
+}
+
+#about {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(27, 102, 95);
+}
+
+#about-container {
+    width: 40%;
+}
+
+#about h2 {
     font-family: 'Pattaya', sans-serif;
-    width: 60%;
-    height: 60%;
-    border: 1px solid black;
 }
 
-@media (max-width: 750px) {
+#projects {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(27, 102, 95);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 70px;
+    }
+    .menu li a {
+        padding: 15px;
+    }
+    #about-container {
+        width: 70%;
+    }
     .project-tile {
         align-items: center;
-        width: 50%;
-        border: 1px solid red;
-    }
-}
-
-@media (min-width: 750px) {
-    #projects {
-        width: 50%;
-        border: 1px solid black;
     }
 }
