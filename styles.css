@@ -6,68 +6,81 @@
 
 body {
     height: 100%;
-    margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial;
     color: rgb(27, 102, 95);
 }
 
+#about-section,
+#projects-section,
+#contact-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* Navigation */
+
 #navbar {
+    display: flex !important;
+    justify-content: flex-end !important;
     background-color: turquoise;
     font-weight: bold;
     position: fixed;
     width: 100%;
     top: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 #nav-links {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     margin-right: 70px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 #nav-links li {
     padding: 15px;
 }
 
-#navbar a:link {
-    text-decoration: none;
-    color: rgb(27, 102, 95);
-}
-
+#navbar a:link,
 #navbar a:visited {
     text-decoration: none;
     color: white;
 }
 
+#navbar a:active,
 #navbar a:hover {
     text-decoration: none;
     color: rgb(27, 102, 95);
 }
 
-#navbar a:active {
-    text-decoration: none;
-}
-
-.menu {
-    display: none;
-}
-
-.menu {
-    background-color: turquoise;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-ul {
+#navbar ul {
     list-style: none;
 }
+
+
+/* Text */
 
 h1,
 h2 {
     font-family: 'Pattaya', sans-serif;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Welcome */
 
 #welcome-section {
     display: flex;
@@ -84,17 +97,20 @@ h2 {
 
 #welcome-section header h1 {
     color: rgb(27, 102, 95);
-    font-size: 50px;
     text-shadow: 2px 2px turquoise;
+    font-size: 60px;
 }
 
 #welcome-section header h3 {
     color: rgb(27, 102, 95);
+    font-size: 30px;
 }
 
-#about {
+
+/* About */
+
+#about-section {
     color: white;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,42 +120,136 @@ h2 {
 }
 
 #about-container {
-    width: 40%;
-}
-
-#about h2 {
-    font-family: 'Pattaya', sans-serif;
-}
-
-#projects {
-    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contact {
-    height: 100vh;
+.about-container {
+    width: 50%;
+    font-size: 1.5vw;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#self-portrait-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+}
+
+#self-portrait-box img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 68%;
+    background-color: turquoise;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Projects */
+
+#projects-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    font-size: 2vw;
+    margin-top: 5%;
+}
+
+.project-img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* Contact */
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
     background-color: rgb(27, 102, 95);
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 70px;
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
     }
-    .menu li a {
-        padding: 15px;
+    #nav-links {
+        margin-right: 0 !important;
+    }
+    #welcome-section header h1 {
+        font-size: 8vw;
+    }
+    #welcome-section header h3 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    #about-text {
+        margin-left: 2%;
+        margin-right: 2%;
     }
     #about-container {
-        width: 70%;
+        flex-direction: column-reverse;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
-    .project-tile {
+    .about-container {
+        font-size: 3vw;
+    }
+    #self-portrait-box {
+        max-width: 40%;
+        margin-bottom: 5%;
+    }
+    #projects-container {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #about-text {
+        margin-left: 10%;
+        margin-right: 5%;
     }
 }
