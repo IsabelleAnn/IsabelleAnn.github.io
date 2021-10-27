@@ -10,9 +10,7 @@ body {
     color: rgb(27, 102, 95);
 }
 
-#about-section,
-#projects-section,
-#contact-section {
+section {
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -21,6 +19,11 @@ body {
 /* Navigation */
 
 #navbar {
+    font-family: 'Pattaya', sans-serif;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.247);
+    font-size: 32px;
+    font-weight: 50;
+    z-index: 1;
     display: flex !important;
     justify-content: flex-end !important;
     background-color: turquoise;
@@ -106,17 +109,84 @@ p {
     font-size: 30px;
 }
 
+#hi-text {
+    text-align: left;
+}
+
+#developer-text {
+    text-align: right;
+}
+
+
+/* Projects */
+
+#projects-section {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(27, 102, 95);
+    color: white;
+}
+
+#projects-section>h2 {
+    padding-bottom: 3%;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 30px 0px 30px;
+}
+
+.project-tile>a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    background-color: turquoise;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.157);
+    border-radius: 10px;
+}
+
+#projects-container a:link,
+#projects-container a:visited,
+#projects-container a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#projects-container a:hover {
+    color: rgb(27, 102, 95);
+}
+
+.project-img {
+    filter: grayscale(var(--value, 100%));
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-img:hover {
+    filter: grayscale(var(--value, 0%));
+}
+
+.project-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* About */
 
 #about-section {
-    color: white;
+    color: rgb(27, 102, 95);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: rgb(27, 102, 95);
 }
 
 #about-container {
@@ -155,37 +225,6 @@ p {
 }
 
 
-/* Projects */
-
-#projects-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 30%;
-    font-size: 2vw;
-    margin-top: 5%;
-}
-
-.project-img {
-    max-width: 80%;
-    height: auto;
-}
-
-
 /* Contact */
 
 #contact-section {
@@ -195,16 +234,44 @@ p {
     flex-direction: column;
     color: white;
     background-color: rgb(27, 102, 95);
+    font-size: 1.5vw;
+}
+
+#contact-section a:link,
+#contact-section a:visited,
+#contact-section a:active {
+    /* font-size: 1vw; */
+    text-decoration: none;
+    color: white;
+}
+
+#contact-section a:hover {
+    color: turquoise;
 }
 
 #contact-container {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-    font-size: 2vw;
+    justify-content: space-around;
+    width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+.contact-link {
+    margin: 0px;
+}
+
+.contact-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon {
+    max-height: 24px;
+    max-width: 24px;
+    margin-right: 3px;
+}
+
+@media all and (max-width: 768px) {
     #navbar {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
@@ -240,14 +307,20 @@ p {
         max-width: 40%;
         margin-bottom: 5%;
     }
-    #projects-container {
-        display: flex;
+    #contact-container {
         flex-direction: column;
-        align-items: center;
+    }
+    .contact-link {
+        font-size: 3vw;
+        margin: 2px;
+    }
+    .contact-icon {
+        max-height: 4%;
+        max-width: 4%;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media all and (min-width: 769px) {
     #about-text {
         margin-left: 10%;
         margin-right: 5%;

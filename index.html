@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNav">
             <ul id="nav-links" class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#welcome-section">Home</a>
+                    <a class="nav-link" href="#welcome-section">Welcome</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about-section">About</a>
@@ -43,67 +43,102 @@
 
     <section id="welcome-section">
         <header>
-            <h1>Isabelle Dikovsky</h1>
-            <h3>Creative Web Developer</h3>
+            <h3 id="hi-text">Hi, I'm</h3>
+            <h1>Isabelle Dikovsky,</h1>
+            <h3 id="developer-text">a Frontend Web Developer.</h3>
         </header>
-    </section>
-
-    <section id="about-section">
-        <div id="about-container">
-            <div class="about-container" id="about-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm a junior web developer with a background in graphic design.
-                    <br>I love being creative and especially love solving technical problems, which is why I transitioned into web development. I'm looking for an opportunity to grow in a developer environment and sharpen my skills as a web developer.
-                </p>
-                <h2>Skill Set</h2>
-                <p>Proficient In: JavaScript, TypeScript, HTML5, CSS3, Adobe Photoshop, Illustrator & InDesign</p>
-                <p>Experienced In: C#, SQL, AngularJS, Github, Regex</p>
-            </div>
-            <div class="about-container" id="self-portrait-box"><img src="../assets/portrait1x1.png"></div>
-        </div>
     </section>
 
     <section id="projects-section">
         <h2>My Projects</h2>
         <div id="projects-container">
             <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">User Access Memory Game</a>
-            </div>
-            <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/full/NWpbXbE" target="_blank">Portfolio</a>
-            </div>
-            <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/full/BaWQwdy" target="_blank">Technical Documentation</a>
-            </div>
-            <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/full/RwpRXEd" target="_blank">Landing Page</a>
-            </div>
-            <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/full/qBBQvOj" target="_blank">Survey Form</a>
-            </div>
-            <div class="project-tile">
-                <img class="project-img" src="">
-                <a href="https://codepen.io/IsabelleAnn/full/NjoLmG" target="_blank">Tribute Page</a>
-            </div>
 
+                <a href="https://codepen.io/IsabelleAnn/full/NWpbXbE" target="_blank"><img class="project-img" src="../assets/portfolio-thumbnail.png">
+                    <p class="project-name">Portfolio</p>
+                </a>
+            </div>
+            <div class="project-tile">
 
+                <a href="https://codepen.io/IsabelleAnn/full/BaWQwdy" target="_blank"><img class="project-img" src="../assets/Tech-Doc-thumbnail.png">
+                    <p class="project-name">Technical Documentation</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/full/RwpRXEd" target="_blank"><img class="project-img" src="../assets/landing-page-thumbnail.png">
+                    <p class="project-name">Landing Page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/full/qBBQvOj" target="_blank"><img class="project-img" src="../assets/survey-form-thumbnail.png">
+                    <p class="project-name">Survey Form</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/full/NjoLmG" target="_blank"><img class="project-img" src="../assets/tribute-page-thumbnail.png">
+                    <p class="project-name">Tribute Page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://github.com/IsabelleAnn/Memory-Game" target="_blank"><img class="project-img" src="../assets/memory-game-thumbnail.png">
+                    <p class="project-name">Memory Game</p>
+                </a>
+            </div>
         </div>
+    </section>
 
+    <section id="about-section">
+        <div id="about-container">
+            <div class="about-container" id="about-text">
+                <h2>About Me</h2>
+                <p>I'm a partially self-taught Frontend Web Developer with a background in Graphic Design.
+                    <br>I learned development through a Fullstack Web Dev course and FreeCodeCamp.com. I love being creative and especially love solving technical problems, which is why I transitioned into web development.
+                </p>
+                <h2>Skill Set</h2>
+                <p>Proficient In: JavaScript, TypeScript, HTML5, CSS3, Adobe Photoshop, Illustrator & InDesign</p>
+                <p>Experienced In: C#, SQL, AngularJS, Github, Regex</p>
+            </div>
+            <div class="about-container" id="self-portrait-box"><img id="avatar" src="../assets/bnw-avatar.png"></div>
+        </div>
     </section>
 
     <section id="contact-section">
-        <h2>Connect with me</h2>
+        <h2>Connect With Me</h2>
         <div id="contact-container">
-            <div><a href="https://github.com/IsabelleAnn" target="_blank">Github</a></div>
-            <div><a href="https://www.linkedin.com/in/isabelledikovsky/" target="_blank">LinkedIn</a></div>
-            <div><a id="profile-link" href="https://www.freecodecamp.org/isabelleann" target="_blank">FreeCodeCamp</a></div>
-            <div><a href="https://codepen.io/IsabelleAnn" target="_blank">CodePen</a></div>
-            <div><a href="https://www.behance.net/IsabelleAnn85" target="_blank">Design</a></div>
+            <div>
+                <a class="contact-link-container" href="https://github.com/IsabelleAnn" target="_blank">
+                    <img class="contact-icon" src="../assets/github-icon.png">
+                    <p class="contact-link">Github</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" href="https://www.linkedin.com/in/isabelledikovsky/" target="_blank">
+                    <img class="contact-icon" src="../assets/linkedin-icon.png">
+                    <p class="contact-link">LinkedIn</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" id="profile-link" href="https://www.freecodecamp.org/isabelleann" target="_blank">
+                    <img class="contact-icon" src="../assets/freecodecamp-icon.png">
+                    <p class="contact-link">FreeCodeCamp</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" href="https://codepen.io/IsabelleAnn" target="_blank">
+                    <img class="contact-icon" src="../assets/codepen-icon.png">
+                    <p class="contact-link">CodePen</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" href="https://www.behance.net/IsabelleAnn85" target="_blank">
+                    <img class="contact-icon" src="../assets/behance-icon.png">
+                    <p class="contact-link">Design</p>
+                </a>
+            </div>
         </div>
 
     </section>
