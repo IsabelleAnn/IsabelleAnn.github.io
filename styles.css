@@ -53,13 +53,13 @@ section {
 #navbar a:link,
 #navbar a:visited {
     text-decoration: none;
-    color: white;
+    color: rgb(27, 102, 95);
 }
 
 #navbar a:active,
 #navbar a:hover {
     text-decoration: none;
-    color: rgb(27, 102, 95);
+    color: white;
 }
 
 #navbar ul {
