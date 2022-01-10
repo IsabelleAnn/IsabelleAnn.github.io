@@ -3,94 +3,150 @@
 
 <head>
     <title>Personal Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="personal portfolio" content="web development projects" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="personal portfolio" content="Web Development Projects" />
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Isabelle Dikovsky">
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="navbar">
-        <ul id="nav-links">
-            <li>
-                <a href="#welcome-section">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <div class="menu">
-            <li>
-                <a href="#welcome-section">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNav">
+            <ul id="nav-links" class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#welcome-section">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-section">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+            </ul>
         </div>
+
     </nav>
+
 
     <section id="welcome-section">
         <header>
-            <h1>Isabelle Dikovsky</h1>
-            <h3>Creative Web Developer</h3>
+            <h3 id="hi-text">Hi, I'm</h3>
+            <h1>Isabelle Dikovsky,</h1>
+            <h3 id="developer-text">Designer/Frontend Web Developer in training</h3>
         </header>
     </section>
 
-    <section id="about">
-        <div id="about-container">
-            <h2>About Me</h2>
-            <p>Hi, I'm a junior web developer with a background in graphic design.
-            </p>
-            <p>I love being creative and especially love solving technical problems, which is why I transitioned into web development. I'm looking for an opportunity to grow in a developer environment and sharpen my skills as a web developer.</p>
-        </div>
-
-    </section>
-
-    <section id="projects">
+    <section id="projects-section">
         <h2>My Projects</h2>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 1</a>
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 2</a>
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 3</a>
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 4</a>
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 5</a>
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank">Project 6</a>
+        <div id="projects-container">
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/pen/NWpbXbE" target="_blank"><img class="project-img" src="../assets/portfolio-thumbnail.png">
+                    <p class="project-name">Portfolio</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/pen/BaWQwdy" target="_blank"><img class="project-img" src="../assets/Tech-Doc-thumbnail.png">
+                    <p class="project-name">Technical Documentation</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/pen/RwpRXEd" target="_blank"><img class="project-img" src="../assets/landing-page-thumbnail.png">
+                    <p class="project-name">Landing Page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/pen/qBBQvOj" target="_blank"><img class="project-img" src="../assets/survey-form-thumbnail.png">
+                    <p class="project-name">Survey Form</p>
+                </a>
+            </div>
+            <div class="project-tile">
+
+                <a href="https://codepen.io/IsabelleAnn/pen/NjoLmG" target="_blank"><img class="project-img" src="../assets/tribute-page-thumbnail.png">
+                    <p class="project-name">Tribute Page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.freecodecamp.org/certification/isabelleann/javascript-algorithms-and-data-structures" target="_blank"><img class="project-img" src="../assets/JS-Certificate-thumbnail.png">
+                    <p class="project-name">JavaScript Projects</p>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Connect with me</h2>
-        <div><a id="profile-link" href="https://www.freecodecamp.org/isabelleann" target="_blank">FreeCodeCamp</a></div>
-        <div><a href="https://codepen.io/IsabelleAnn" target="_blank">CodePen</a></div>
-        <div><a href="" target="_blank">Behance</a></div>
-        <div><a href="" target="_blank">Git</a></div>
-        <div><a href="" target="_blank">LinkedIn</a></div>
+    <section id="about-section">
+        <div id="about-container">
+            <div class="about-container" id="about-text">
+                <h2>About Me</h2>
+                <p>I'm a graphic designer with a passion for creating beautiful things and solving technical problems. This combination of design and technical skills brought me to pursue frontend web development as an addition to my career path. I'm learning
+                    web development through FreeCodeCamp.com and creating projects.
+                </p>
+                <h2>Skill Set</h2>
+                <p class="experience">Adobe Photoshop, Illustrator & InDesign</p>
+                <p class="experience">JavaScript, TypeScript, HTML, CSS, Visual Studio Code, Github</p>
+            </div>
+            <div class="about-container" id="self-portrait-box"><img id="avatar" src="../assets/bnw-avatar.png"></div>
+        </div>
     </section>
+
+    <section id="contact-section">
+        <h2>Connect With Me</h2>
+        <div id="contact-container">
+            <div>
+                <a class="contact-link-container" href="https://github.com/IsabelleAnn" target="_blank">
+                    <img class="contact-icon" src="../assets/github-icon.png">
+                    <p class="contact-link">Github</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" href="https://www.linkedin.com/in/isabelledikovsky/" target="_blank">
+                    <img class="contact-icon" src="../assets/linkedin-icon.png">
+                    <p class="contact-link">LinkedIn</p>
+                </a>
+            </div>
+
+            <div>
+                <a class="contact-link-container" href="https://codepen.io/IsabelleAnn" target="_blank">
+                    <img class="contact-icon" src="../assets/codepen-icon.png">
+                    <p class="contact-link">CodePen</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" href="https://www.behance.net/IsabelleAnn85" target="_blank">
+                    <img class="contact-icon" src="../assets/behance-icon.png">
+                    <p class="contact-link">Design Portfolio</p>
+                </a>
+            </div>
+            <div>
+                <a class="contact-link-container" id="profile-link" href="https://www.freecodecamp.org/isabelleann" target="_blank">
+                    <img class="contact-icon" src="../assets/freecodecamp-icon.png">
+                    <p class="contact-link">freeCodeCamp</p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p class="footer">© Isabelle Dikovsky 2021</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

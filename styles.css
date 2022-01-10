@@ -6,68 +6,84 @@
 
 body {
     height: 100%;
-    margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial;
     color: rgb(27, 102, 95);
 }
 
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* Navigation */
+
 #navbar {
+    font-family: 'Pattaya', sans-serif;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.247);
+    font-size: 32px;
+    font-weight: 50;
+    z-index: 1;
+    display: flex !important;
+    justify-content: flex-end !important;
     background-color: turquoise;
     font-weight: bold;
     position: fixed;
     width: 100%;
     top: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 #nav-links {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     margin-right: 70px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 #nav-links li {
     padding: 15px;
 }
 
-#navbar a:link {
+#navbar a:link,
+#navbar a:visited {
     text-decoration: none;
     color: rgb(27, 102, 95);
 }
 
-#navbar a:visited {
+#navbar a:active,
+#navbar a:hover {
     text-decoration: none;
     color: white;
 }
 
-#navbar a:hover {
-    text-decoration: none;
-    color: rgb(27, 102, 95);
-}
-
-#navbar a:active {
-    text-decoration: none;
-}
-
-.menu {
-    display: none;
-}
-
-.menu {
-    background-color: turquoise;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-ul {
+#navbar ul {
     list-style: none;
 }
+
+
+/* Text */
 
 h1,
 h2 {
     font-family: 'Pattaya', sans-serif;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Welcome */
 
 #welcome-section {
     display: flex;
@@ -84,62 +100,238 @@ h2 {
 
 #welcome-section header h1 {
     color: rgb(27, 102, 95);
-    font-size: 50px;
     text-shadow: 2px 2px turquoise;
+    font-size: 60px;
 }
 
 #welcome-section header h3 {
     color: rgb(27, 102, 95);
+    font-size: 30px;
 }
 
-#about {
+#hi-text {
+    text-align: left;
+}
+
+#developer-text {
+    text-align: right;
+}
+
+
+/* Projects */
+
+#projects-section {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(27, 102, 95);
     color: white;
-    height: 100vh;
+}
+
+#projects-section>h2 {
+    padding-bottom: 3%;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 30px 0px 30px;
+}
+
+.project-tile>a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    background-color: turquoise;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.157);
+    border-radius: 10px;
+}
+
+#projects-container a:link,
+#projects-container a:visited,
+#projects-container a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#projects-container a:hover {
+    color: rgb(27, 102, 95);
+}
+
+.project-img {
+    filter: grayscale(var(--value, 100%));
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-img:hover {
+    filter: grayscale(var(--value, 0%));
+}
+
+.project-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* About */
+
+#about-section {
+    color: rgb(27, 102, 95);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: rgb(27, 102, 95);
 }
 
 #about-container {
-    width: 40%;
-}
-
-#about h2 {
-    font-family: 'Pattaya', sans-serif;
-}
-
-#projects {
-    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contact {
-    height: 100vh;
+.about-container {
+    width: 50%;
+    font-size: 1.5vw;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#self-portrait-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+}
+
+#self-portrait-box img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 68%;
+    background-color: turquoise;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.experience {
+    margin: 0px;
+}
+
+
+/* Contact */
+
+#contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     background-color: rgb(27, 102, 95);
+    font-size: 1.5vw;
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 70px;
+#contact-section a:link,
+#contact-section a:visited,
+#contact-section a:active {
+    /* font-size: 1vw; */
+    text-decoration: none;
+    color: white;
+}
+
+#contact-section a:hover {
+    color: turquoise;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.contact-link {
+    margin: 0px;
+}
+
+.contact-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon {
+    max-height: 24px;
+    max-width: 24px;
+    margin-right: 3px;
+}
+
+.footer {
+    font-size: 16px;
+    margin: 0px;
+}
+
+@media all and (max-width: 768px) {
+    #navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
     }
-    .menu li a {
-        padding: 15px;
+    #nav-links {
+        margin-right: 0 !important;
+    }
+    #welcome-section header h1 {
+        font-size: 8vw;
+    }
+    #welcome-section header h3 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    #about-text {
+        margin-left: 2%;
+        margin-right: 2%;
     }
     #about-container {
-        width: 70%;
+        flex-direction: column-reverse;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
-    .project-tile {
-        align-items: center;
+    .about-container {
+        font-size: 3vw;
+    }
+    #self-portrait-box {
+        max-width: 40%;
+        margin-bottom: 5%;
+    }
+    #contact-container {
+        flex-direction: column;
+    }
+    .contact-link {
+        font-size: 3vw;
+        margin: 2px;
+    }
+    .contact-icon {
+        max-height: 4%;
+        max-width: 4%;
+    }
+}
+
+@media all and (min-width: 769px) {
+    #about-text {
+        margin-left: 10%;
+        margin-right: 5%;
     }
 }
