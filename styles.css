@@ -11,8 +11,8 @@ body {
 }
 
 section {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -81,6 +81,7 @@ h2 {
 
 h2 {
     font-size: 40px;
+    padding: 0;
 }
 
 p {
@@ -132,10 +133,6 @@ p {
     color: white;
 }
 
-#projects-section>h2 {
-    padding-bottom: 3%;
-}
-
 #projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -143,7 +140,7 @@ p {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0px 30px 0px 30px;
+    padding: 50px 30px 50px 30px;
 }
 
 .project-tile>a {
@@ -234,13 +231,13 @@ p {
 /* Contact */
 
 #contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     color: white;
     background-color: rgb(27, 102, 95);
-    padding: 3%;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 20px;
 }
 
 #contact-section a:link,
@@ -254,27 +251,19 @@ p {
     color: white;
 }
 
-#contact-container {
+#icon-container {
     display: flex;
     justify-content: center;
-    /* width: 80%; */
-}
-
-.contact-link {
-    margin: 0px;
+    padding-bottom: 10px;
 }
 
 .contact-link-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.footer {
-    font-size: 16px;
-    margin: 0px;
+#footer {
+    font-size: 14px;
 }
 
 @media all and (max-width: 768px) {
@@ -315,7 +304,7 @@ p {
     }
     .contact-link {
         font-size: 3vw;
-        margin: 2px;
+        /* margin: 2px; */
     }
 }
 
